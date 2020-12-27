@@ -1,0 +1,693 @@
+/*-------------------------Global classes-------------------*/
+html, body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#button:focus {
+    box-shadow: none;
+}
+
+/*---------------------------------------Scrollbar------------------------------------------------*/
+.scroll-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 5em;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+    height: 0.25rem;
+}
+  
+body::-webkit-scrollbar-track {
+    background: rgb(35, 35, 35);
+}
+  
+body::-webkit-scrollbar-thumb {
+    background: #05823d;
+}
+
+/*---------------------------------------Nav-menu------------------------------------------------*/
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+}
+.navbar {
+    background-color: black;
+    width: 100vw;
+    margin-left: -15px;
+    margin-bottom: 40px;
+}
+
+.navbar-brand {
+    color: rgb(40, 145, 40);
+    font-weight: bolder;
+}
+
+.navbar button>i{
+    color: green;
+    font-size: 40px;
+}
+
+.navbar li a{
+    padding: 18px;
+    color:white;
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: 'Roboto', sans-serif;
+}
+
+#page-0 button:focus {
+    outline: none;
+}
+
+/*---------------------------------------Navbar when user is logged------------------------------------------------*/
+.main-container {
+    /* margin-top: 100px !important; */
+    z-index: 1;
+}
+
+#navbar {
+    margin-top: -38px;
+    height: 50px;
+}
+
+#navbar img {
+    margin-top: -10px;
+}
+
+/*---------------------------------------Sidebar------------------------------------------------*/
+
+#sidebar{
+    margin-top: 70px;
+    position: absolute;
+    z-index: 1;
+}
+
+#sidebar ul{
+    padding-left: 0px;
+    position: fixed;
+    list-style: none;
+    line-height: 4rem;
+}
+
+#sidebar ul li a{
+    color: blanchedalmond;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+#sidebar ul li a:hover{
+    color: green;
+}
+
+/*---------------------------------------Sidebar------------------------------------------------*/
+/*---------------------------------------Page-1------------------------------------------------*/
+
+#page-1{
+    margin-top: 150px;
+    margin-bottom: 60px;
+    padding-bottom: 40px;
+    color: white;
+    background: black;
+    opacity: 0.9;
+}
+
+#page-1 h1, h2 {
+    font-family: 'Anton', sans-serif;
+}
+
+#page-1 p {
+    font-family: 'Roboto', sans-serif;
+}
+
+#page1-1 {
+    display: none;
+}
+
+#page-1 {
+    display: flex;
+}
+
+/*---------------------------------------Page-1------------------------------------------------*/
+/*---------------------------------------Page-2------------------------------------------------*/
+
+#page-2 {
+    margin-top: 150px;
+    background-color: black;
+    opacity: 0.9;
+    padding-left: 10px;
+    text-align: justify;
+    color: white;
+    font-family: 'Anton', sans-serif;
+}
+
+#page-2 p {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*---------------------------------------Page-2------------------------------------------------*/
+/*---------------------------------------Page-3------------------------------------------------*/
+#page-3 {
+    margin-top: 150px;
+    background-color: black;
+    opacity: 0.9;
+    padding-bottom: 60px;
+    color: white;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.table th:hover {
+    background: rgb(73, 221, 73);
+    color: black;
+}
+
+.table td:hover {
+    background: rgb(62, 206, 62);
+    color: black;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.table td a {
+    text-decoration: none;
+    color: rgb(50, 211, 50);
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.table td:hover a {
+    color: black;
+}
+
+.table td {
+    position: relative;
+}
+
+.table a {
+    align-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+#page-3 h1,h2{
+    font-family: 'Anton', sans-serif;
+}
+
+#page-3 p{
+    font-family: 'Roboto', sans-serif;
+}
+#text, tr{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+/*--------------------------------------------Modal Post --------------------------------------------------*/
+
+#modal {
+    margin-top: 150px;
+    opacity: 0.9;
+    display: flex;
+}
+
+.popUp {
+    background: black;
+}
+
+#popUp1 h3 {
+    margin-top: 150px;
+    font-family: 'Anton', sans-serif;
+    margin-bottom: 10px;
+}
+
+#popUp1 form input{
+    margin-bottom: 10px;
+    box-shadow: none;
+}
+
+#popUp1 button {
+    background: white;
+    font-family: 'Anton', sans-serif;
+}
+
+#popUp1 button::placeholder {
+    color: rgb(7, 65, 7);
+}
+
+#popUp1 button:hover {
+    background: rgb(7, 65, 7);
+    color: white;
+}
+
+#home-posts {
+   background: black;
+   padding: 40px;
+   overflow-y: scroll;
+   max-height: 600px;
+}
+
+#home-posts h4 {
+    color: wheat;
+    padding: 10px;
+    font-family: 'Anton', sans-serif;
+    background: #05823d;
+}
+
+#home-posts p {
+    text-align: center;
+    color: white;
+    font-size: larger;
+}
+
+#home-posts .post{
+    height: 300px;
+}
+
+#home-posts .post .fa-heart, .fa-comment-dots, .fa-eye {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#home-posts-icon {
+    color: wheat;
+}
+
+#home-posts-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.fa-heart span {
+    padding-left: 5px;
+    font-size: 15px !important;
+    color: black !important;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+
+.fa-comment-dots span {
+    padding-left: 5px;
+    font-size: 15px !important;
+    color: black !important;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+
+.fa-eye span {
+    padding-left: 5px;
+    font-size: 15px !important;
+    color: black !important;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+
+
+#home-posts .post .fa-user-circle {
+    font-size: 70px;
+}
+
+#home-posts::-webkit-scrollbar {
+    width: 0.25rem;
+    height: 0.25rem;
+}
+  
+#home-posts::-webkit-scrollbar-track {
+    background: rgb(35, 35, 35);
+}
+  
+#home-posts::-webkit-scrollbar-thumb {
+    background: #05823d;
+}
+
+#my-posts {
+    background: black;
+    padding: 40px;
+    max-height: 600px;
+    overflow-y: scroll;
+ }
+ 
+ #my-posts h4 {
+     color: wheat;
+     padding: 10px;
+     font-family: 'Anton', sans-serif;
+     background: #05823d;
+ }
+ 
+ #my-posts p {
+     font-size: larger;
+     color: wheat;
+     text-align: center;
+ }
+ 
+ #my-posts .post{
+     height: 300px;
+ }
+ 
+ #my-posts .post .fa-heart, .fa-comment-dots, .fa-eye {
+     font-size: 25px;
+     cursor: pointer;
+}
+
+#my-posts .post .fa-user-circle {
+     font-size: 70px;
+}
+ 
+#my-posts::-webkit-scrollbar {
+     width: 0.25rem;
+     height: 0.25rem;
+}
+   
+#my-posts::-webkit-scrollbar-track {
+     background: rgb(35, 35, 35);
+}
+   
+#my-posts::-webkit-scrollbar-thumb {
+     background: #05823d;
+}
+
+#write-post {
+    height: 100%;
+    background: black;
+}
+
+#write-post h3 {
+    color: wheat;
+}
+
+.popUp-text1 p{
+    padding-left: 25px;
+}
+
+.popUp-text1 {
+    padding: 5px 5px;
+    margin-top: 25px;
+    color: black;
+    font-size: 30px;
+    font-family: 'Anton', sans-serif;
+    background: white;
+    height: 55px;
+}
+  
+.popUp-text2 {
+    width: 100%;
+    margin-top: 25px;
+    padding: 15px 10px;
+    height: 55px;
+    color: black;
+    font-size: 20px;
+    font-family: 'Anton', sans-serif;
+    background: white;
+    font-weight: lighter;
+    display: flex;
+    align-content: center;
+    border: none;
+}
+
+.popUp-text2:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.popUp-text3:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.popUp-text4:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.popUp-text2:hover {
+    background: rgb(7, 65, 7);
+    color: white;
+}
+
+.popUp-text2 i {
+    font-size: 25px;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+  
+.popUp-text3 {
+    width: 100%;
+    padding: 15px 10px;
+    height: 55px;
+    margin-top: 5px;
+    color: black;
+    font-size: 20px;
+    font-family: 'Anton', sans-serif;
+    background: white;
+    font-weight: lighter;
+    border: none;
+    display: flex;
+    align-content: center;
+}
+
+.popUp-text3:hover {
+    background: rgb(7, 65, 7);
+    color: white;
+}
+
+.popUp-text3 i {
+    font-size: 25px;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+ 
+.popUp-text4 {
+    align-content: center;
+    width: 100%;
+    padding: 10px 10px;
+    height: 50px;
+    margin-top: 5px;
+    color: black;
+    font-size: 20px;
+    font-family: 'Anton', sans-serif;
+    background: white;
+    font-weight: lighter;
+    border: none;
+    display: flex;
+}
+
+.popUp-text4:hover {
+    background: rgb(7, 65, 7);
+    color: white;
+}
+  
+.popUp-text4 i {
+    font-size: 25px;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.btn-close-popUp {
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    top: -10px;
+    right: 90px;
+}
+    
+.popUp::-webkit-scrollbar {
+    width: 0.25rem;
+    height: 0.25rem;
+}
+  
+.popUp::-webkit-scrollbar-track {
+    background:transparent;
+}
+  
+.popUp::-webkit-scrollbar-thumb {
+    background:transparent;
+}
+
+#photo {
+    margin-left: 110px;
+    border-radius: 50%;
+    width: 40%;
+    height: 25%;
+    margin-top: 20px;
+    font-size: 180px;
+}
+
+.popUp #Icon {
+    margin-left: 90px;
+    border-radius: 50%;
+    width: 20%;
+    height: 20%;
+    margin-top: 20px;
+    font-size: 180px;
+    color: rgb(255, 255, 255);
+}
+
+.popUp .Email p {
+    text-align: center;
+}
+
+.signOut2 .fa-sign-out-alt{
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+.popUp-text5 {
+    align-content: center;
+    width: 100%;
+    padding: 10px 10px;
+    height: 50px;
+    margin-top: 5px;
+    color: black;
+    font-size: 20px;
+    font-family: 'Anton', sans-serif;
+    background: white;
+    font-weight: lighter;
+    border: none;
+    display: flex;
+}
+
+.popUp-text5:hover {
+    background: rgb(7, 65, 7);
+    color: white;
+}
+
+.popUp-text5:focus {
+    outline: none;
+}
+
+.popUp-text5 i {
+    font-size: 25px;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/*---------------------------------------Page-3------------------------------------------------*/
+/*---------------------------------------Page-4------------------------------------------------*/
+
+#page-4 {
+    align-content: center;
+    background: black;
+    color: white;
+    padding-left: 75px;
+    width: 100vw;
+    height: 150vh;
+    margin-left: -20px;
+}
+
+#page-4 h1,h2{
+    font-family: 'Anton', sans-serif;
+
+}
+
+#page-4 p{
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#table-text {
+    padding-left: 30px;
+}
+
+.pic {
+    width: 60px;
+    padding: 1px;
+    height: 45px;
+}
+
+#foot h4{
+    color: white;
+    align-items: center;
+}
+
+#row i{
+    text-align: center;
+    color: rgb(73, 198, 73);
+}
+
+#foot {
+    text-align: center;
+}
+
+.icons {
+    font-size: 30px;
+}
+
+#mail {
+    text-decoration: none;
+    color: green;
+}
+
+.form-element input{
+    outline: none;
+}
+
+.form-element ::placeholder {
+    color: green;
+}
+
+/*-------------------------------- Media queries --------------------------------------*/
+@media (max-width: 770px) and (orientation: landscape) {
+
+    #page-1 {
+        display: none;
+    }
+
+    #page1-1 {
+        display: block;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+ 
+    #page1-1 h1{
+        color: rgb(24, 24, 24);
+        font-weight: bolder;
+        font-size: 60px;
+        font-family: 'Anton', sans-serif;
+    }
+
+    #page1-1 p{
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px;
+        font-weight: bolder;
+        color: rgb(30, 29, 29);
+        line-height: 25px;
+    }
+
+    #page1-1 img {
+        max-height: 80vh;
+    }
+
+   
+    #sidebar{
+        margin-top: 100px;
+        z-index: 1;
+    }
+    
+    #sidebar ul{
+        margin-left: -14px;
+        line-height: 3rem;
+    }
+    
+    #sidebar ul li a{
+        font-size: 2rem;
+    }   
+    
+} 

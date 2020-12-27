@@ -1,0 +1,654 @@
+/*---------------------------------Global classes-------------------------------------*/
+* {
+  text-decoration: none;
+}
+
+html,
+body {
+  height: 100%;
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+.row {
+  width: 250px;
+}
+
+.login1 > a button {
+  position: absolute;
+  right: 20px;
+  width: 100px;
+  height: 50px;
+  margin-top: 20px;
+}
+
+.login2 {
+  display: none;
+}
+
+#logo{
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+}
+
+#logo:hover {
+  transform: rotate(-180deg);
+}
+
+.mastfoot p{
+  color: blanchedalmond;
+  font-size: 25px;
+  font-weight: lighter;
+  font-family: 'Roboto', sans-serif;
+}
+
+.mastfoot p a {
+  text-decoration: none;
+}
+
+.navbar {
+  width: 8rem;
+  height: 100vh;
+  background-color: black;
+  transition: width 700ms ease;
+  visibility: visible;
+}
+
+.navbar-nav {
+  list-style: none;
+  height: 100vh;
+}
+
+.nav-link {
+  height: 6rem;
+  color: rgb(75, 205, 75);
+}
+
+.link-text {
+  display: none;
+}
+
+.nav-link i {
+  font-size: 40px;
+  margin: 1rem;
+}
+
+.navbar-nav a:hover {
+  color: rgb(19, 21, 19);
+}
+
+.navbar:hover {
+  width: 16rem;
+  overflow: hidden;
+}
+
+.nav-item:hover {
+  background: rgb(22, 136, 53);
+  margin-right: -16px;
+}
+
+.navbar:hover .link-text{
+  display: inline-block;
+}
+
+.angle-row{
+  font-weight: lighter;
+  margin-bottom: 4rem;
+}
+
+.navbar:hover .angle-row i{
+  transform: rotate(-180deg);
+  color: rgb(186, 243, 170);
+}
+
+.navbar:hover .angle-row{
+  text-align: center;
+}
+
+.navbar:hover #tv {
+  margin-left: -45px;
+}
+
+.navbar:hover #dates{
+  margin-left: -20px;
+}
+
+.navbar:hover #instagram{
+  margin-left: -35px;
+}
+
+span {
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 1px;
+}
+
+#sidebar1 {
+  display: block;
+}
+
+#sidebar2 {
+  display: none;
+}
+
+/*------------------- Pop up login -----------------*/
+
+.container-all {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgb(2, 104, 45);
+  visibility: hidden;
+  opacity: 0.8;
+  transition: all 600ms;
+}
+
+.container-all:target {
+  visibility: visible;
+}
+
+.popUp {
+  width: 100%;
+  height: 95%;
+  max-width: 600px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  display: block;
+  transform: translate(-50%, -50% );
+  overflow-y: auto;
+}
+
+.popUp .fa-user-circle {
+  margin-top: 20px;
+  font-size: 180px;
+  color: rgb(255, 255, 255);
+}
+
+.popUp-text1 {
+  padding: 5px 5px;
+  margin-top: 20px;
+  color: black;
+  font-size: 30px;
+  font-family: 'Anton', sans-serif;
+  background: white;
+  height: 55px;
+}
+
+.popUp-text2 {
+  margin-top: 10px;
+  padding: 20px 10px;
+  height: 100px;
+  color: black;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  background: white;
+  font-weight: bold;
+}
+
+.popUp-text3 {
+  width: 100%;
+  padding: 10px 10px;
+  height: 50px;
+  margin-top: 30px;
+  color: black;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  background: white;
+  font-weight: bold;
+  border: none;
+}
+
+.popUp-text4 {
+  width: 100%;
+  padding: 10px 10px;
+  height: 50px;
+  margin-top: 5px;
+  color: black;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  background: white;
+  font-weight: bold;
+  border: none;
+}
+
+.popUp-text4:focus {
+  outline: none;
+}
+
+.popUp-text5 {
+  padding: 10px 10px;
+  height: 55px;
+  margin-top: 5px;
+  color: black;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  background: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.popUp-text5 a {
+  text-decoration: none;
+  color: black;
+}
+
+.popUp-text5 a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.fa-times-circle {
+  font-size: 40px;
+  color: white;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.fa-google-plus {
+  color: red;
+  font-size: 30px;
+}
+
+.popUp::-webkit-scrollbar {
+  width: 0.25rem;
+  height: 0.25rem;
+}
+
+.popUp::-webkit-scrollbar-track {
+  background:transparent;
+}
+
+.popUp::-webkit-scrollbar-thumb {
+  background:transparent;
+}
+
+/*------------------- Sign-in with email -----------------*/
+.sign-in-email {
+  margin-top: 20px;
+} 
+
+.sign-in-email #rememberMe {
+  color: rgb(0, 45, 0);
+  font-family: 'Roboto', sans-serif;
+}
+
+.sign-in-email #passwordforgot {
+  color: rgb(0, 45, 0);
+  font-family: 'Roboto', sans-serif;
+}
+
+.sign-in-email .form-control::placeholder {
+  color: green;
+}
+
+.sign-in-email .form-control:focus {
+  box-shadow: none;
+}
+
+.sign-in-email span i {
+  color: rgb(118, 176, 4)
+}
+
+.sign-in-email button {
+  display: inline;
+}
+
+.sign-in-register {
+  padding: 20px 20px;
+  width: 20%;
+  border: none;
+  color: black;
+  font-family: 'Anton', sans-serif;
+  background: rgb(90, 255, 90);
+  opacity: 0.9;
+  font-size: smaller;
+}
+
+.go-back-button {
+  padding: 20px 20px;
+  width: 20%;
+  border: none;
+  color: black;
+  font-family: 'Anton', sans-serif;
+  background: rgb(90, 255, 90);
+  opacity: 0.9;
+  font-size: smaller;
+}
+
+.go-back-button:hover {
+  width: 25%;
+  background: rgb(7, 65, 7);
+  box-shadow: none;
+  color: white;
+}
+
+.sign-in-register:hover {
+  width: 25%;
+  background: rgb(7, 65, 7);
+  box-shadow: none;
+  color: white;
+}
+
+.go-back-button:focus {
+  outline: none;
+}
+
+.sign-in-register:focus {
+  outline: none;
+}
+/*------------------- Login -----------------*/
+
+.login {
+  margin-top: 10px;
+}
+
+.login .form-control::placeholder {
+  color: green;
+}
+
+.login .form-control:focus {
+  box-shadow: none;
+}
+
+.login span i {
+  color: rgb(118, 176, 4)
+}
+
+.login div:last-child {
+  display: inline-flex;
+  color: rgb(0, 45, 0);
+  font-family: 'Roboto', sans-serif;
+}
+
+.login div:last-child input, label {
+  margin-right: 350px;
+  color: rgb(14, 14, 14);
+}
+
+/*--------------------------Sign out-------------------------------*/
+.signOut1 .fa-sign-out-alt{
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: rgb(61, 121, 61);
+}
+
+.signOut1 .fa-sign-out-alt:hover {
+  color: rgb(249, 249, 249);
+}
+
+#userPhoto {
+  transform: translate(43%, 43%);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 80px;
+  width: 50px;
+  height: 50px;
+}
+
+#userIcon {
+  margin-top: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0px;
+  right: 60px;
+  font-size: 50px;
+  color: white;
+}
+
+/*--------------------------Modal2-------------------------------*/
+#modal2 {
+  display: block;
+  z-index: 10;
+}
+
+#userPhoto1 img{
+  border-radius: 50%;
+  width: 20%;
+  height: 20%;
+}
+
+#userIcon1 i{
+  border-radius: 50%;
+  width: 20%;
+  height: 20%;
+}
+
+#modal2 .popUp-text2 {
+  margin-top: 10px;
+  padding: 30px 10px;
+  height: 100px;
+  color: black;
+  font-size: 20px;
+  font-family: 'Anton', sans-serif;
+  background: white;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+#modal2 .popUp-text2:hover {
+  background: rgb(19, 70, 19);
+  color: white;
+}
+
+#modal2 a {
+  text-decoration: none;
+}
+
+#modal2 .popUp-text6 {
+  margin-top: 10px;
+  padding: 10px 10px;
+  height: 50px;
+  color: black;
+  font-size: 20px;
+  font-family: 'Anton', sans-serif;
+  background: white;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+#modal2 .popUp-text6:hover {
+  background: rgb(19, 70, 19);
+  color: white;
+}
+
+#modal2 .popUp-text7 {
+  margin-top: 10px;
+  padding: 10px 10px;
+  height: 50px;
+  color: black;
+  font-size: 20px;
+  font-family: 'Anton', sans-serif;
+  background: white;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+#modal2 .popUp-text7:hover {
+  background: rgb(19, 70, 19);
+  color: white;
+}
+
+#modal2 #yes {
+  margin-top: 10px;
+  padding: 20px 20px;
+  width: 20%;
+  border: none;
+  color: black;
+  font-family: 'Anton', sans-serif;
+  background: rgb(90, 255, 90);
+  opacity: 0.9;
+  font-size: smaller;
+}
+
+#modal2 #yes:hover {
+  width: 25%;
+  background: rgb(7, 65, 7);
+  box-shadow: none;
+  color: white;
+}
+
+#modal2 #yes:focus {
+  outline: none;
+}
+
+#modal2 #no {
+  margin-top: 10px;
+  padding: 20px 20px;
+  width: 20%;
+  border: none;
+  color: black;
+  font-family: 'Anton', sans-serif;
+  background: rgb(90, 255, 90);
+  opacity: 0.9;
+  font-size: smaller;
+}
+
+#modal2 #no:focus {
+   outline: none;
+}
+
+#modal2 #no:hover {
+  width: 25%;
+  background: rgb(7, 65, 7);
+  box-shadow: none;
+  color: white;
+}
+/*--------------------------------------- Media queries -------------------------------------*/
+
+@media (max-width: 770px) and (orientation: landscape) {
+
+  #logo {
+    height: 150px;
+    width: 150px;
+  }
+
+  .mastfoot p {
+    font-size: 15px;
+  }
+
+  .row {
+    width: 150px;
+  }
+
+  #sidebar1 {
+    display: none;
+  }
+
+  #sidebar2 {
+    display: block;
+    height: 20vh;
+  }
+
+  #sidebar2 .nav-item a i{
+    padding-top: 1px;
+    font-size: 30px;
+  }
+
+  #sidebar2 .nav-item a i span{
+    font-size: 30px;
+  }
+  
+  #sidebar2:hover .nav-item {
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  #sidebar2 .nav-link {
+      padding-right: 0;
+      padding-left: 0;
+      margin-bottom: -20px;
+  }
+  
+  #sidebar2 .angle-row {
+    margin-bottom: -5px;
+  }
+
+  #sidebar2 .angle-row a i {
+    font-size: 30px;
+  }
+
+  #sidebar2:hover .angle-row a i{
+    margin-left: -30px;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 575px){
+
+  #userIcon {
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+  }
+
+  #userPhoto {
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+  }
+
+  .signOut1 .fa-sign-out-alt{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: rgb(58, 140, 58);
+  }
+
+  .login1 {
+    display: none;
+  }
+
+  .login2 {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 100px;
+    height: 50px;
+    color: whitesmoke;
+  }
+
+  .login2 i,span{
+    color: whitesmoke;
+  }
+
+  .login2 span {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .go-back-button {
+    width: 30%;
+    height: 30%;
+  }
+
+  .sign-in-register {
+    width: 30%;
+    height: 30%;
+  }
+  
+  #userPhoto {
+    border-radius: 50%;
+    width: 10%;
+    height: 5%;
+  }
+}
+
+
+  
