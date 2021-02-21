@@ -7,8 +7,8 @@ As a first step, I determined what the app was for, by developing typical user p
 I chose as a back-end web server Firebase because it is free for small projects and it provides a way to store and retrieve data using Javascript, so after creating the HTML, CSS, and JS files, I installed Node because Firebase CLI is built using the node scripting system. Then I added functionality with javascript and Vue js with the help of Firebase as a web server, by using its Authentication and Realtime database modules, so that my chat app could be almost a real app for chatting.
 Finally, just because I wanted my web app to behave like a native app standalone on iOS and Android I added specials tags to the HTML files and put a bookmark to my web app on the home screen of my mobile device. You will also need to find or create an icon to display on the home screen.
 
-This is the website, you can log-in and sign-in whenever you want: https://nysl-cc182.web.app/
+This is the website, you can login and signin whenever you want: https://nysl-cc182.web.app/
 
-PS: To see the chat of one specific game you can log-in and then click in any game to acces.
+PS: To see the chat of one specific game you can signup and then click on any game to acces.
 
 Enjoy!
