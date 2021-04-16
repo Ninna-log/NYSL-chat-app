@@ -1,4 +1,4 @@
-# NYSL-chat-app
+# 💻📲 NYSL-chat-app
 
 This is my first chat app. 
 So, in order to create this mobile web app, I visualized my-self as an independent developer that the Northside Youth Soccer League (NYSL) hired to create an app and give their players and parents an easy on-the-go access to the league's game schedules. I added features to the app that are specific to mobile devices, such as location-based features so parents can see where they are in relation to the soccer field.
@@ -19,12 +19,12 @@ PS: To see the chat of one specific game you can signup and then click on any ga
 
 👀 <strong>Interfaces</a>
 
-<img align="center" src="https://github.com/Ninna-log/NYSL-chat-app/blob/main/img/interface4.jpg" alt="interface1" height="400" width="1800" />
+<img align="center" src="https://github.com/Ninna-log/NYSL-chat-app/blob/main/img/interface4.jpg" alt="interface1" height="400" width="1200" />
 <br>
 <br>
 
-<img align="center" src="https://github.com/Ninna-log/NYSL-chat-app/blob/main/img/interface2.jpg" alt="interface2" height="400" width="1800" />
+<img align="center" src="https://github.com/Ninna-log/NYSL-chat-app/blob/main/img/interface2.jpg" alt="interface2" height="400" width="1200" />
 <br>
 <br>
 
-<img align="center" src="https://github.com/Ninna-log/NYSL-chat-app/blob/main/img/interface3.jpg" alt="interface2" height="400" width="1800" />
+<img align="center" src="https://github.com/Ninna-log/NYSL-chat-app/blob/main/img/interface3.jpg" alt="interface2" height="400" width="1200" />
